@@ -322,9 +322,9 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
                 req_body_text = req_body
 
             if req_body_text:
-                print with_color(32, "==== REQUEST BODY ====\n%s\n" % req_body_text)
+                print (32, "==== REQUEST BODY ====\n%s\n" % req_body_text)
 
-        print with_color(36, res_header_text)
+        print (36, res_header_text)
 
         cookies = res.headers.getheaders('Set-Cookie')
         if cookies:
